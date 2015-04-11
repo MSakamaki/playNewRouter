@@ -18,7 +18,10 @@
     },
     app: {
       src: 'client/**/*',
-      js: './client/app/**/*!(spec).js'
+      js: [
+        './client/app/**/*!(spec).js',
+        './client/components/**/*!(spec).js'
+        ]
     },
     report: {
       covorage: './report/coverage',

@@ -10,6 +10,7 @@ gulp.task('eslint', function() {
   return gulp.src([
     'gulp/**/*.js',
     'client/app/**/*.js',
+    'client/components/**/*.js',
     'e2e/**/*.js'
     ])
     .pipe(eslint())

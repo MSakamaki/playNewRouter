@@ -2,6 +2,7 @@
 {
   "globals": {
     "console": true,
+    "angular": true,
     "module": true
   },
   "env": {
@@ -10,6 +11,7 @@
     "jasmine": true,
   },
   "rules": {
+    "strict": 0,
     "no-console": false,
     "semi": 2,
     "quotes": "single",
