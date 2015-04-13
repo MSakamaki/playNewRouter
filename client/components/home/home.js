@@ -11,7 +11,7 @@ import 'angular-sanitize';
 
 var homeModule = angular.module('app.home', ['app.detail','ngSanitize']);
 homeModule.controller('HomeController', [function () {
-    this.name = 'Friend';
+    this.name = 'Angular New Router';
     this.routers =[];
     this.show=(r)=>{
       console.log(r)
