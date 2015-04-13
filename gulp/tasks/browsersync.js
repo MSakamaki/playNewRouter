@@ -7,7 +7,7 @@
   var config = require('../gulp.config');
 
   var defaultSyncFile = [
-      './client/app/**/*.js',
+      './client/**/*.js',
       './client/app/**/*.css',
       './client/**/*.html'
     ];

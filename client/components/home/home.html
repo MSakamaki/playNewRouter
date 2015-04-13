@@ -1,1 +1,12 @@
 <h1>Hello {{home.name}}!</h1>
+<div ng-repeat=" route in home.routers | orderBy:'-type' ">
+  <p>
+    <span class="token keyword" ng-bind="route.type"></span>
+    <span class="token function" ng-bind="route.name"></span>
+    <button ng-click="route.show = !route.show" >Show Code</button>
+    <pre class="language-javascript" ng-show="route.show">
+      <code>
+<span ng-bind="route.code"></span>
+      </code>
+    </pre>
+</div>

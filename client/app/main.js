@@ -1,8 +1,14 @@
 // global strict
 'use strict';
 
+// utill
+
+//import '../jspm_packages/github/PrismJS/prism@master/themes/prism.css!';
+//import prism from 'prism';
+
 import angular from 'angular';
 import 'angular-new-router';
+
 
 // component loader
 import 'components/home/home';
@@ -19,9 +25,13 @@ angular.module('myApp', ['ngNewRouter','app.home'])
 * @class AppController
 * @module myApp
 */
-function AppController ($router) {
-  $router.config([
-    {path: '/', component: 'home' },
+
+// rooting config
+AppController.$routeConfig = [
+    { path: '/', component: 'home' },
     { path: '/detail/:id', component: 'detail' }
-  ]);
+  ];
+
+function AppController () {
 }
+

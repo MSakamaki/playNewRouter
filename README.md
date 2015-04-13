@@ -19,10 +19,10 @@ npm install
 # javascript module install
 jspm install npm:angular@1.4.0-rc.0
 jspm install npm:angular-new-router -o "{ main : 'dist/router.es5'}"
+jspm install npm:esprima
 jspm install
 
 # start develop server
 gulp
 ```
-
 
